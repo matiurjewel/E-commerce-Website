@@ -6,9 +6,11 @@ const session = require("express-session");
 const port = 3000;
 
 const app = express();
+app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.send("Hello World");
+  res.render("home");
 });
 
 app.listen(port, function () {
