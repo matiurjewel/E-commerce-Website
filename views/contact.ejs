@@ -1,0 +1,69 @@
+<%- include('partials/header') -%>
+
+<div class="container contact-form bg-dark">
+  <div class="contact-image">
+    <i class="fab fa-rocketchat text-light fa-5x pt-3"></i>
+    <form action="">
+      <h3 class="text-light">We would love to hear your feedback</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              type="text"
+              name="textName"
+              placeholder="Your Name *"
+              value=""
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="textEmail"
+              placeholder="Your Email *"
+              value=""
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="textPhone"
+              placeholder="Your Phone *"
+              value=""
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="submit"
+              name="btnSubmit"
+              onclick=""
+              placeholder="Your Phone *"
+              value="Send Message"
+              class="btnContact"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea
+              name="txtMsg"
+              id=""
+              class="form-control"
+              cols="30"
+              rows="10"
+              style="width: 100%; height: 150px"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') -%>
